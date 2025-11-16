@@ -1,0 +1,18 @@
+.groceryList {
+    text-indent:  5%;
+    width:20%;
+    margin:50px;
+    padding:20px;
+    border: 2px;
+    border-style: solid;
+}
+
+h1{text-align: center;}
+.notes{
+  text-align: left;
+  padding: 20px;
+  margin: 60px;
+  width:50%;
+  border: 2px;
+  border-style:solid;
+}
