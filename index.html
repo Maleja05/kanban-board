@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML - Notes</title>
+</head>
+<body class="notes">
+    <h1>This is the Header</h1>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Architecto voluptas dolore ab adipisci, doloremque 
+         velit et quis! Ratione quasi explicabo fugiat ab, 
+         dignissimos maxime exercitationem, magni consectetur
+          expedita sapiente perspiciatis?</p>
+
+    <h2>Things to do this week:</h1>
+    <ul>
+        <li>Homework</li>
+        <li>Study for test</li>
+    </ul>
+    <ol>
+        <li>COP quiz 7</li>
+        <li>COP discussion 7</li>
+        <li>CIS Lab 8</li>
+    </ol> 
+    <!-- block element -->
+    <div>  
+        <h2>Division header</h2>
+        <p>Division parragraph</p>
+    </div>
+
+    <!-- attributes -->
+    <img src="https://i.pinimg.com/1200x/4c/30/08/4c30088b20481aef0be2092d49e0841b.jpg" alt="HTML image" width="20%"> 
+
+    <h2>CSS Notes</h2>
+    <p>Hierarchy - cascading by priority and speccificity:</p>
+    <ul>
+      <li>p element CSS</li>
+      <li>.name class</li>
+      <li>#name id most speccific one use only</li>
+    </ul>
+
+    <h3>Examples:</h3>
+    <p>h1{color:red;} <br> p{font-size:20px;} <br> #intro{color:green;} individual 
+      <br> .intro{color:blue;} group a lot broader <br> flexbox - helps with react to take from one device to another adapts </p>
+
+    <p>.container{ <br> &nbsp&nbsp&nbsp display:flex <br> &nbsp&nbsp&nbsp gap:4px <br> } </p>
+
+
+<div class="groceryList">
+    <h1 >My Grocery List</h1>
+    <ul>
+        <li>Soup</li>
+        <li>Chicken</li>
+        <li>Eggs</li>
+    </ul>
+</div>
+
+</body>
+</html>
+
+
+<h3 style="text-align: center;">java script - modifies html and css dinamically</h3>
+<ul>
+  <li>Browser(client-side)</li>
+  <li>Server (Node.js)</li>
+</ul>
+
+
+<p>HW: learn what AST-abstract syntax tree  (pseudocode) and JIT compilation. DOM tree 
+inline: inside element.</p>
+
+Git notes
+Open command line ctr~
+terminal: git init // git command in the challenge folder/ initialized repository 
+git status // shows changes in code, current status of repository
+git add . // add files to github/ adds all of the files, after .filename for specific files you want to add (stagin area)
+git commit -m "Added a brilliant new feature"// -m is for message 
+git commit -m "Added first repository"
+git status
+git log - commit timeline (shows newest first)
+<p> code in github repository get link 
+git remote add origin https://github.com/Maleja05/kanban-board.git
+git push -u origin master // (or main) pushes out code to github, first time we're telling Git to always use origin for our master branch 
+-------------if unrelated history error ---------------
+git pull origin [branch] --allow-unreleted-histories // branch could be main or master etc
+git push -u origin master
+delete folder w code
+In VSCode go to File > Open Folder > (where you want the project) then run the terminal
+</p>code - link, "git clone https://github.com/Maleja05/kanban-board.git" // to get code back 
+
+--------------------------------------------------------------Notes on React---------------------------------------------------------------
+React is a huge javascypt library 
+state-based/declarative describes the entire application state 
+user interaction change the sate cusing the UI to update automatically (dont need to sue doc w it)
+DOM updates when state changes, describe the UI
+function Welcome(){
+    return <h1>Hello, world!</h1>; //show on the body of the website
+}
+Component a piece of ui as a function "custum" HTML - tags
+Props - arguments you pass into Component
+Hooks - built in tool like useState and useEffect // creates own setter function
+state - data that the component manages 
+
+const [inpuText, setInputText] = usestate('');
+<!-- <input 
+    value = {inputText}
+    onChange={(event) => setInputText(event.target.value)}
+/> -->
+
+npm = Node package manager: lets you install, share, and manage codes. node.js
+package.json - jason file that contains project info, includes scripts and dependencies.
+
+Vite: fast build tool, lightning-fast dev server
+
+----------------------------------------------------Next part------------------------------------------------------------
+open terminal
+"npm create vite@latest"
+y, "project name", select react -> javascript -> no -> yes.
+ctr click on the link that is produced after /local host/
+go to folder "App.jsx" have this code instead -> picture in phone:
+
+import { useState } from 'react';
+import './styles.css';
+
+export default function App(){
+
+    return (
+        <div>
+
+        </div>
+    );
+}
+
+add styles.css we prevously made into src/assets folder
+add html code into div/ not the headers
+
+npm run dev to get back into link
